@@ -21,6 +21,7 @@ jobs:
           node-version: 14
           cache: "npm"
       - run: yarn
-        cache: yarn-install
+        with:
+          cache: yarn-install
       - run: echo .env.example > .env
       - run: yarn test
