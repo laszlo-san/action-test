@@ -11,5 +11,5 @@ it('should return hello world', async () => {
   const res = await request(strapi.server.httpServer)
     .get('/api/hello');
 
-    expect(res.text).toEqual("Hello World!");
+    expect(res.text).toEqual("Hello World! With added content so we can test the whole GitHub workflow!");
 });
