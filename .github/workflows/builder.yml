@@ -6,7 +6,7 @@
 name: Create and publish a Docker image
 
 on:
-  merge:
+  push:
     branches: ['main']
 
 env:
